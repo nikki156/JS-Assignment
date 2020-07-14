@@ -1,0 +1,32 @@
+<html>
+    <head>
+       <title>Current Day & Time</title>
+    </head>
+    <body>
+        <h1>Current Day & Time</h1>
+        <script>
+            var currentDate = new Date();
+            //Day
+            var day = currentDate.getDay();
+            // Array of days
+            var weekday = ['Sunday', 'Monday', 'Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            //Hours
+            var hours= currentDate.getHours();
+            var ampm= hours <=12 ?'AM':'PM'; //ternary operator
+            hours = hours % 12;
+            hours ? hours:12;
+            
+            //Minutes
+            var minutes= currentDate.getMinutes();
+            minutes= minutes < 10 ? '0'+minutes : minutes;
+            //Seconds
+            var seconds= currentDate.getSeconds();
+            var time= hours +"" + ampm +":" + minutes + ":" + seconds;
+
+            document.write("Today is:" +weekday[day]);
+            document.write("<br>");
+            document.write("Current time is:" + time);
+        </script>
+    </body>
+ </html> 
+
