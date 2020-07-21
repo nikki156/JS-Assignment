@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-5 Assignment</title>
+</head>
+<body>
+    <h1>Higher order functions</h1>
+    <script>
+        let a=prompt("Enter a positive number:");
+        //Array of numbers given by user
+        let b=[];
+        for(var i=0;i<a;i++){
+         b.push(i);
+       }
+     console.log(b);
+     let odd = b.filter(el=>el%2!=0).map(el=>el**3);
+     console.log(odd);
+    </script>
+</body>
+</html>
