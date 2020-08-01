@@ -1,0 +1,34 @@
+*{
+    background-color: aqua;
+  
+    
+}
+h1{
+    text-align: center;
+    color: blue; 
+    font-size:60px;
+
+}
+div{
+    text-align: center;
+}
+
+
+#quoteDisplay{
+    text-align: center; 
+    font-size: 30px; 
+    color:white;
+    background-color:rgb(138, 43, 226);
+    margin-bottom: 50px; 
+    margin-top: 15px;
+    font-style: italic ;
+    
+} 
+
+button{
+    background-color: slateblue;
+   color:rgb(240, 235, 228); 
+   font-size: 25px;
+   padding: 6px 15px;
+
+}
